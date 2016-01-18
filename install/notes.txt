@@ -1,0 +1,1 @@
+"mouf/nodejs-installer": "~1.0",

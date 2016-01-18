@@ -1,0 +1,26 @@
+body {
+    background-color: #2F5151;
+}
+
+.head {
+    font-family: Arial;
+    font-size: 2em;
+}
+
+.title {
+    
+}
+
+.brand {
+    float: left;
+    margin-right: 5px;
+}
+
+.app-name {
+    float: left;
+    color: #FFFFFF;
+}
+
+.clearfix {
+    clear: both;
+}
