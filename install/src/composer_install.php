@@ -1,5 +1,7 @@
 <?php
     // Download composer.phar
     if (!file_exists('composer.phar')) {
-        exec('php -r "readfile(\'https://getcomposer.org/installer\');" | php');
+        echo system('php -r "readfile(\'https://getcomposer.org/installer\');" | php');
+    } else {
+        echo 'Composer.phar Already Installed!';
     }

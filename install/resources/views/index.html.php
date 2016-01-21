@@ -50,11 +50,23 @@
         		<div class="step-content">
         			<div class="step-pane active sample-pane alert" data-step="1">
         				<h4>Composer</h4>
-        				<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+        				<p id="composer-output">
+                            <?php
+                                ob_start();
+                                system('php -r "readfile(\'https://getcomposer.org/installer\');" | php');
+                                $output = ob_get_contents();
+                                ob_end_clean();
+                            ?>
+                            
+                            <?php echo "<pre>$output</pre>" ?>
+                            <!-- Installing Composer... -->
+        				</p>
         			</div>
         			<div class="step-pane sample-pane bg-info alert" data-step="2">
         				<h4>Bower</h4>
-        				<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
+        				<p id="bower-output">
+        				    Installing Bower...
+        				</p>
         			</div>
         			<div class="step-pane sample-pane bg-danger alert" data-step="3">
         				<h4>PPI Config</h4>
