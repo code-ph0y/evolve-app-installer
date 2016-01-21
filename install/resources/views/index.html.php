@@ -5,6 +5,7 @@
 		<script src="<?php echo JS_URL . 'bootstrap.min.js'; ?>"></script>
         <script src="<?php echo JS_URL . 'fuelux.min.js'; ?>"></script>
         <script src="<?php echo JS_URL . 'wizard.js'; ?>"></script>
+        <script src="<?php echo JS_URL . 'angularjs.min.js'; ?>"></script>
         <script src="<?php echo JS_URL . 'init.js'; ?>"></script>
         <!-- load css files -->
 		<link href="<?php echo CSS_URL . 'bootstrap.min.css'; ?>" rel="stylesheet">
@@ -57,7 +58,7 @@
                                 $output = ob_get_contents();
                                 ob_end_clean();
                             ?>
-                            
+
                             <?php echo "<pre>$output</pre>" ?>
                             <!-- Installing Composer... -->
         				</p>
