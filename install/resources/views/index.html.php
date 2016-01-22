@@ -49,27 +49,31 @@
         			</button>
         		</div>
         		<div class="step-content">
-        			<div class="step-pane active sample-pane alert" data-step="1">
+        			<div class="step-pane active sample-pane alert" data-step="1"  ng-controller="Composer">
         				<h4>Composer</h4>
         				<p id="composer-output">
-                            <?php
-                                ob_start();
-                                system('php -r "readfile(\'https://getcomposer.org/installer\');" | php');
-                                $output = ob_get_contents();
-                                ob_end_clean();
-                            ?>
-
-                            <?php echo "<pre>$output</pre>" ?>
+                            <div class="cssload-wrap">
+                            	<div class="cssload-container">
+                                	<span class="cssload-dots"></span>
+                                	<span class="cssload-dots"></span>
+                                	<span class="cssload-dots"></span>
+                                	<span class="cssload-dots"></span>
+                                	<span class="cssload-dots"></span>
+                                	<span class="cssload-dots"></span>
+                                	<span class="cssload-dots"></span>
+                                	<span class="cssload-dots"></span>
+                                </div>
+                            </div>
                             <!-- Installing Composer... -->
         				</p>
         			</div>
-        			<div class="step-pane sample-pane bg-info alert" data-step="2">
+        			<div class="step-pane sample-pane bg-info alert" data-step="2"  ng-controller="Bower">
         				<h4>Bower</h4>
         				<p id="bower-output">
         				    Installing Bower...
         				</p>
         			</div>
-        			<div class="step-pane sample-pane bg-danger alert" data-step="3">
+        			<div class="step-pane sample-pane bg-danger alert" data-step="3"  ng-controller="PPIConfig">
         				<h4>PPI Config</h4>
         				<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
         			</div>
