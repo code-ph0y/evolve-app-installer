@@ -13,7 +13,7 @@ if (!file_exists('composer.phar')) {
     $process = proc_open($cmd, $descriptorspec, $pipes, realpath('./'), array());
     if (is_resource($process)) {
         while ($s = fgets($pipes[1])) {
-            echo "event: composer_update\n";
+            echo "event: composer_update \n";
             echo 'data: {"output": "<pre>' . (string)$s . '</pre>"}';
             echo "\n\n";
             ob_end_flush();

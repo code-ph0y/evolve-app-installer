@@ -36,7 +36,7 @@
         					<span class="chevron"></span>
         				</li>
         				<li data-step="3" data-name="template">
-        					<span class="badge">3</span>PPI Config
+        					<span class="badge">3</span>Delete Installer and Run App
         					<span class="chevron"></span>
         				</li>
         			</ul>
@@ -51,21 +51,24 @@
         		<div class="step-content">
         			<div class="step-pane active sample-pane alert" data-step="1"  ng-controller="Composer">
         				<h4>Composer</h4>
-        				<p id="composer-output">
-                            <div class="cssload-wrap">
-                            	<div class="cssload-container">
-                                	<span class="cssload-dots"></span>
-                                	<span class="cssload-dots"></span>
-                                	<span class="cssload-dots"></span>
-                                	<span class="cssload-dots"></span>
-                                	<span class="cssload-dots"></span>
-                                	<span class="cssload-dots"></span>
-                                	<span class="cssload-dots"></span>
-                                	<span class="cssload-dots"></span>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="col-sm-6 term">
+                                    Loading...
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="col-sm-6">
+                                        <h3>Spare 5 Mins?</h3>
+                                        <p>Please checkout composer at:</p>
+                                        <p><a target="_blank" href="https://getcomposer.org">https://getcomposer.org</a></p>
+                                    </div>
+                                    <div class="col-sm-6 text-right">
+                                        <img class="composer-logo" src="<?php echo IMAGE_URL . 'logo-composer.png'; ?>" />
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Installing Composer... -->
-        				</p>
+                        </div>
         			</div>
         			<div class="step-pane sample-pane bg-info alert" data-step="2"  ng-controller="Bower">
         				<h4>Bower</h4>
@@ -73,8 +76,8 @@
         				    Installing Bower...
         				</p>
         			</div>
-        			<div class="step-pane sample-pane bg-danger alert" data-step="3"  ng-controller="PPIConfig">
-        				<h4>PPI Config</h4>
+        			<div class="step-pane sample-pane bg-danger alert" data-step="3"  ng-controller="RunApp">
+        				<h4>Delete and Run App</h4>
         				<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
         			</div>
         		</div>

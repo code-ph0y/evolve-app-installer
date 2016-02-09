@@ -8,8 +8,7 @@ $(document).ready(function() {
             var obj = JSON.parse(e.data);
             $("#composer-output").html(obj.output);
         }, false);
-    }
-    else {
+    } else {
         $.ajax({ url: "src/composer_old_browser.php" })
          .done(function( data ) {
              $("#composer-output").html(data);
