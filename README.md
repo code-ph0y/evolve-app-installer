@@ -1,2 +1,2 @@
-# ppi-initial-install
-Initial web installer for PPI Skeletonapp
+# Evolve-App-Installer
+Web installer for Evolve App
